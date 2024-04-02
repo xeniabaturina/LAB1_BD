@@ -19,12 +19,14 @@ class RegressionModel(nn.Module):
         return out
 
 
-def save_model(model, filepath):
-    torch.save(model.state_dict(), filepath)
+class ModelHandler:
+    @staticmethod
+    def save_model(model, filepath):
+        torch.save(model.state_dict(), filepath)
 
-
-def load_model(filepath, input_size):
-    model = RegressionModel(input_size)
-    model.load_state_dict(torch.load(filepath))
-    model.eval()
-    return model
+    @staticmethod
+    def load_model(filepath, input_size):
+        model = RegressionModel(input_size)
+        model.load_state_dict(torch.load(filepath))
+        model.eval()
+        return model
