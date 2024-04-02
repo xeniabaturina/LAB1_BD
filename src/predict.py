@@ -2,8 +2,8 @@ import torch
 import pandas as pd
 import configparser
 
-from src.preprocess import DataProcessor
-from src.utils import ModelHandler
+from .preprocess import DataProcessor
+from .utils import ModelHandler
 
 
 class Predictor:
