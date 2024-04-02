@@ -2,8 +2,8 @@ import torch.optim as optim
 import torch.nn as nn
 import configparser
 
-from src.preprocess import DataProcessor
-from src.utils import RegressionModel, ModelHandler
+from .preprocess import DataProcessor
+from .utils import RegressionModel, ModelHandler
 
 
 class Trainer:

@@ -14,6 +14,6 @@ def test_train_model_saves_file(generated_fixture_data):
     assert os.path.exists(model_path), "Model file was not created after training."
 
     handler = ModelHandler()
-    model = handler.load_model(model_path, input_size=14)
+    model = handler.load_model(model_path, input_size=13)
 
     assert model is not None, "Loaded model is None."
