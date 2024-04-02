@@ -20,4 +20,4 @@ jobs:
       run: docker pull xeniabaturina/lab1_bd:latest
 
     - name: Execute Functional Tests
-      run: docker run --rm xeniabaturina/lab1_bd pytest tests/
+      run: docker run --rm xeniabaturina/lab1_bd pytest src/unit_tests/
